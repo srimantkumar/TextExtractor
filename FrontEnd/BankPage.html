@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="BankPage.css">
+    <link rel="stylesheet" href="Navbar.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Bank Fill Page Form</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="index.html" class="logo">SmartFill</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="BankPage.html">Services</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>
+
+    <!-- The Bank Open Fill Form -->
+    <div class="container" >
+        <div id="Form" class="adhar-container">
+            <label for="image">Chose Your Adhar Card :</label>
+            <input type="file" id="adharFile" name="image" required>
+            <button type="submit" id="submitButton">Upload</button>
+        </div>
+        <br>
+        <header>Bank Open Form</header>
+
+        <form action="#" id="bankPageSubmission">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" id = "field1" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="text" placeholder="dd/mm/yyyy" id = "field2" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" id = "field3" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter mobile number" id = "field4" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required id = "field5">
+                                <option disabled selected>Select gender</option>
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                                <option>OTHERS</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <select required id = "field6">
+                                <option disabled selected>Select One</option>
+                                <option>Teacher</option>
+                                <option>Farmer</option>
+                                <option>Software Developer</option>
+                                <option>Bussinessman</option>
+                                <option>Daily Wager</option>
+                                <option>Govt. Employee</option>
+                                <option>Student</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field1">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter address" id = "field7" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" placeholder="Enter ID type" id="field8" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="text" placeholder="Enter ID number" id = "field9" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" placeholder="Enter issued authority" id="field10"  required>
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter your issued date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div> -->
+                    </div>
+
+                    
+                    <div>
+                        <input type="submit" value="Submit Form">
+                    </div>
+                    
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="BankPage.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="APICall.js"></script>
+</body>
+</html>

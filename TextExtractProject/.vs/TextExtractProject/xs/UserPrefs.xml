@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{E79C8E2A-967E-4F39-B26F-F9DA06E5B485}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ML/DocumentIntelligenceModel.cs">
+    <Files>
+      <File FileName="Controllers/UserController.cs" Line="107" Column="38" />
+      <File FileName="Controllers/UserLoginController.cs" />
+      <File FileName="ModelContexts/UserLoginContext.cs" />
+      <File FileName="Models/User.cs" />
+      <File FileName="Models/UserLogin.cs" />
+      <File FileName="Controllers/DocumentParsingController.cs" Line="33" Column="55" />
+      <File FileName="ML/DocumentIntelligenceModel.cs" Line="10" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TextExtractProject" expanded="True">
+            <Node name="TextExtractProject" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="ML" expanded="True">
+                <Node name="DocumentIntelligenceModel.cs" selected="True" />
+              </Node>
+              <Node name="ModelContexts" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TextExtractProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

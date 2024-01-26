@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Login and SignUp Form</title>
+  <link rel="stylesheet" href="Login.css">
+  <link rel="stylesheet" href="Navbar.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="index.html" class="logo">SmartFill</a>
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="BankPage.html">Services</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" placeholder="Search here..." />
+    </div>
+  </nav>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/SmartFIll.jpeg" alt="Login Form Image">
+        <div class="text">
+          <span class="text-1">Fill Form at your fingertip <br>with SmartFill.</span>
+          <span class="text-2">Let's get started.</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/SmartFillBack.png" alt="Signup Form Image">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step.</span>
+          <span class="text-2">Let's onboard you.</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form action="#" id="loginClick">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your username" id="userName" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" id="password" required>
+                <span class="eye-icon" id="togglePassword">&#128065;</span>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Login">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+          </form>
+        </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+          <form action="#" id="signupClick">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your full name" id="fullName" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your username" id="userNameSignup" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" id="passwordSignup" required>
+                <span class="eye-icon" id="togglePassword1">&#128065;</span>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="SignUp">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="LoginAPICall.js"></script>
+</body>
+
+</html>
